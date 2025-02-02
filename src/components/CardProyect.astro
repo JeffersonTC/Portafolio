@@ -1,0 +1,44 @@
+---
+// filepath: /c:/Users/Jeffers_Devs/Documents/Portafolio/my_proyect_astro/src/components/CardProyect.astro
+const { title, description, image, link, buttom, demo } = Astro.props;
+import GithubIcons from "../assets/Icons/Github.astro";
+import ArrowIcons from "../assets/Icons/Arrow.astro";
+---
+
+<div
+    class="bg-gray-900
+     border border-gray-800 hover:border-teal-500/30
+      block border rounded-xl overflow-hidden transition-all duration-300"
+>
+    <img
+        src={image}
+        alt={title}
+        class="w-full h-48 object-cover hover:scale-110 transition duration-700 ease-in-out"
+    />
+    <div class="py-5 px-5">
+        <h3 class="text-xl font-bold text-slate-100">{title}</h3>
+        <p class="text-slate-300 py-4">{description}</p>
+        <div class="flex justify-center gap-3 py-4">
+            <slot name="icons" />
+        </div>
+        <div class="flex justify-between pt-5 sm:pt-3">
+            <div
+                class="flex items-center text-gray-400 hover:text-teal-500 transition duration-300 px-2 "
+            >
+                <GithubIcons class="w-6 h-6" />
+                <a
+                    class="flex text-gray-400 justify-center text-gray-400 hover:text-teal-500 transition duration-300"
+                    href={link}
+                    >{buttom}
+                </a>
+            </div>
+
+            <a
+                class="rounded-lg border border-gray-700 flex bg-teal-500 justify-center py-2 px-3 hover:bg-teal-400 text-gray-900 hover:text-white font-light hover:text-teal-500 transition duration-300"
+                href={link}
+                >{demo}
+                <ArrowIcons class="w-6 h-6" /></a
+            >
+        </div>
+    </div>
+</div>

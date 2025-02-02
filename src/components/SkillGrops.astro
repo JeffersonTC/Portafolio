@@ -1,0 +1,9 @@
+---
+const { name } = Astro.props;
+---
+
+<span
+    {...Astro.props}
+    class="rounded-full w-[100px] sm:w-full bg-gray-950 border border-gray-800 text-sm text-gray-400 text-center mx-auto flex justify-center gap-x-2 px-5 hover:text-teal-500"
+    >{name}
+</span>

@@ -1,0 +1,16 @@
+---
+const { Email, Tel, Ubicacion } = Astro.props;
+---
+
+<div class="py-3 flex flex-col sm:flex-row items-start text-overflow">
+    <div
+        class="flex-shrink-0 bg-gray-700 py-3 px-3 rounded-lg mb-4 sm:mb-0 sm:mr-4"
+    >
+        <slot />
+    </div>
+    <div class="text-gray-200 flex-1">
+        {Email && <p class="mb-2">{Email}</p>}
+        {Tel && <p class="mb-2">{Tel}</p>}
+        {Ubicacion && <p class="mb-2">{Ubicacion}</p>}
+    </div>
+</div>
