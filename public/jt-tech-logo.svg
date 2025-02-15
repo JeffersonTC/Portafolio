@@ -1,0 +1,73 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    
+    <!-- Circuit Pattern -->
+    <pattern id="circuitPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M0 20 H40 M20 0 V40" stroke="#1e40af" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- Main background -->
+  <circle cx="100" cy="100" r="90" fill="url(#bgGradient)"/>
+  
+  <!-- Circuit pattern overlay -->
+  <circle cx="100" cy="100" r="90" fill="url(#circuitPattern)"/>
+  
+  <!-- Letter J -->
+  <path d="M70 60 
+           Q70 60, 85 60
+           L85 100
+           Q85 120, 70 120"
+        fill="none"
+        stroke="#3b82f6"
+        stroke-width="12"
+        stroke-linecap="round"/>
+  
+  <!-- Letter T -->
+  <path d="M95 60 L135 60 M115 60 L115 120"
+        fill="none"
+        stroke="#3b82f6"
+        stroke-width="12"
+        stroke-linecap="round"/>
+        
+  <!-- Decorative Circuit Lines -->
+  <path d="M50 100 L65 100
+           M135 100 L150 100
+           M100 135 L100 150"
+        stroke="#60a5fa"
+        stroke-width="2"
+        fill="none"/>
+        
+  <!-- Connection Nodes -->
+  <circle cx="65" cy="100" r="3" fill="#93c5fd"/>
+  <circle cx="135" cy="100" r="3" fill="#93c5fd"/>
+  <circle cx="100" cy="135" r="3" fill="#93c5fd"/>
+  
+  <!-- Tech Dots -->
+  <g fill="#60a5fa">
+    <circle cx="60" cy="70" r="2"/>
+    <circle cx="140" cy="70" r="2"/>
+    <circle cx="60" cy="130" r="2"/>
+    <circle cx="140" cy="130" r="2"/>
+  </g>
+  
+  <!-- Glowing Ring -->
+  <circle cx="100" cy="100" r="75" 
+          fill="none" 
+          stroke="#3b82f6" 
+          stroke-width="1"
+          opacity="0.5"/>
+          
+  <!-- Data Flow Lines -->
+  <g stroke="#4f46e5" stroke-width="1" opacity="0.3">
+    <path d="M40 60 L60 60"/>
+    <path d="M140 60 L160 60"/>
+    <path d="M40 140 L60 140"/>
+    <path d="M140 140 L160 140"/>
+  </g>
+</svg>

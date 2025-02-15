@@ -1,0 +1,59 @@
+---
+import Linkend from "../assets/Icons/LinkendIcons.astro";
+import GithubIcons from "../assets/Icons/Github.astro";
+import EmailIcons from "../assets/Icons/Email.astro";
+import SocialPill from "../components/Social_pill.astro";
+import ButtonCU from "../components/ButtonCurriculum.astro";
+import DocumentIcons from "../assets/Icons/Document.astro";
+import PortafolioIcons from "../assets/Icons/Portafolio.astro";
+---
+
+<section
+    id="inicio"
+    class="sm:min-h-screen flex justify-center flex-col mx-auto lg:w-[940px] xl:w-[1280px] mt-20 sm:mt-5 min-[344]:mx-auto scroll-margin-top"
+>
+    <h2
+        class="font-bold justify-center leading-15 text-teal-500 text-lg sm:text-2xl tracking-wider mx-1 mb-4 pt-10 sm:pt-5"
+    >
+        DESARROLLADOR FULL STACK
+    </h2>
+    <h1 class="text-3xl sm:text-4xl md:text-6xl text-white mb-8 font-light">
+        Creando experiencias digitales excepcionales
+    </h1>
+    <p class="text-gray-400 text-lg sm:text-xl mb-12 leading-relaxed">
+        Especializado en el desarrollo de aplicaciones web modernas y soluciones
+        digitales innovadoras para empresas y startups.
+    </p>
+    <nav class="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-10 sm:mb-16">
+        <ButtonCU
+            href="#"
+            class="px-8 py-4 bg-teal-500 text-gray-900 hover:text-white rounded hover:bg-teal-400 transition-colors"
+        >
+            <DocumentIcons class="w-5 h-5 sm:h-6 sm:w-6" />
+            Ver Curriculum</ButtonCU
+        >
+        <ButtonCU
+            href="#proyect"
+            class="px-8 py-4 border border-gray-700 text-white hover:text-teal-400 rounded hover:bg-gray-800 transition-all"
+            ><PortafolioIcons class="w-5 h-5 sm:h-6 sm:w-6" />
+            Ver Proyectos</ButtonCU
+        >
+    </nav>
+    <div
+        class="flex flex-direction items-center gap-5 mt-10 border-t border-gray-800 pt-12 flex-wrap"
+    >
+        <p class="text-center text-gray-400 sm:mb-6">
+            Conéctate conmigo en las redes
+        </p>
+        <nav>
+            <ul class="flex gap-x-3 flex-wrap justify-center">
+                <SocialPill href="https://www.linkedin.com/feed/">
+                    <Linkend class="w-8 h-8 sm:h-10 sm:w-10" />
+                </SocialPill>
+                <SocialPill href="https://github.com/JeffersonTC">
+                    <GithubIcons class="w-8 h-8 sm:h-10 sm:w-10" />
+                </SocialPill>
+            </ul>
+        </nav>
+    </div>
+</section>

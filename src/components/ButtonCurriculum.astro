@@ -1,0 +1,9 @@
+---
+// filepath: /c:/Users/Jeffers_Devs/Documents/Portafolio/my_proyect_astro/src/components/ButtonCurriculum.astro
+const { href, class: className, children } = Astro.props;
+---
+
+<a href={href} class={`px-8 py-4 rounded flex items-center gap-2 ${className}`}>
+    {children}
+    <slot />
+</a>

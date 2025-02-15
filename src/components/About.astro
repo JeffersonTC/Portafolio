@@ -1,0 +1,144 @@
+---
+import BirreteIcons from "../assets/Icons/Birrete.astro";
+import SkillIcons from "../assets/Icons/Skill.astro";
+import HtmlIcons from "../assets/Icons/Html.astro";
+import CssIcons from "../assets/Icons/Css.astro";
+import Skill from "../components/SkillGrops.astro";
+import TailwindsIcons from "../assets/Icons/Tailwinds.astro";
+import AstroIcons from "../assets/Icons/AstroIcons.astro";
+import PythonIcons from "../assets/Icons/Python.astro";
+import JavaScriptIcons from "../assets/Icons/JavaScript.astro";
+import FigmaIcons from "../assets/Icons/Figma.astro";
+import GitIcons from "../assets/Icons/Github.astro";
+import MySQLIcons from "../assets/Icons/MySQL.astro";
+import Perfil from "../assets/IMG/img_jeffer_porta.png";
+---
+
+<section
+    id="about"
+    class="w-full lg:w-[940px] xl:w-[1280px] mx-auto py-5 sm:py-10 scroll-margin-top flex flex-col w-full text-xl to-slate-950 text-gray-400"
+>
+    <div class="mx-auto grid mt-10 flex flex-wrap">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="mx-auto flex flex-col">
+                <h2
+                    class="uppercase text-teal-500 text-xl sm:text-2xl font-bold tracking-wider"
+                >
+                    SOBRE MI
+                </h2>
+                <h3
+                    class="text-lg sm:text-3xl font-light text-white py-4 flex-wrap"
+                >
+                    Desarrollador Full Stack especializado en crear experiencias
+                    digitales excepcionales
+                </h3>
+                <p class="text-gray-400 text-sm sm:text-xl py-5 flex flex-wrap">
+                    Soy un desarrollador web autodidacta con una pasión por la
+                    tecnología y la programación. Me encanta crear aplicaciones
+                    web modernas y soluciones digitales innovadoras para
+                    empresas y startups. Mi objetivo es seguir aprendiendo y
+                    mejorando mis habilidades como desarrollador.
+                </p>
+            </div>
+            <div
+                class="flex justify-center alien-center mb-10 px-10 rounded-lg m-5 border border-gray-800 mx-auto"
+            >
+                <img
+                    src="../src/assets/IMG/img_jeffer_porta.png"
+                    alt="Perfil"
+                    class="max-w-full sm:mb-5 rounded-lg object-cover"
+                />
+            </div>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 rounded-lg mt-10 flex">
+            <div class="p-10 flex-wrap">
+                <h3 class="text-white text-xl flex items-center mb-5 gap-x-2">
+                    <BirreteIcons class="w-8 h-8 text-teal-500" />Educación
+                </h3>
+
+                <div class="border-l-2 border-gray-800 pl-4">
+                    <h5>Ingeniería en Sistemas Computacionales</h5>
+                    <p class="text-teal-500 text-sm mb-5">
+                        Universidad Tecnológica • 2015 - 2019
+                    </p>
+                    <p>
+                        Especialización en Desarrollo de Software y Sistemas
+                        Distribuidos
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="bg-gray-900 rounded-lg mt-5 px-10 border border-gray-800 flex flex-col"
+        >
+            <h3
+                class="flex items-center inline text-white gap-x-2 text-xl py-10"
+            >
+                <SkillIcons class="w-8 h-8" /> Habilidades
+            </h3>
+            <div class="">
+                <h5 class="">Frontend</h5>
+                <div class="flex flex-wrap gap-x-5 py-10">
+                    <div class="mt-5">
+                        <HtmlIcons class="w-10 h-10 mx-auto mb-3" />
+                        <Skill name="Python" />
+                    </div>
+
+                    <div class="mt-5">
+                        <CssIcons class="w-10 h-10 mx-auto mb-3" />
+                        <Skill name="Css" />
+                    </div>
+                    <div class="mt-5">
+                        <TailwindsIcons class="w-10 h-10 mx-auto mb-3" />
+                        <Skill name="Tailwind CSS" />
+                    </div>
+                    <div class="mt-5">
+                        <AstroIcons class="w-10 h-10 mx-auto mb-3" />
+                        <Skill name="Astro" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5 class="">Backend</h5>
+                <div class="flex flex-wrap gap-x-5 py-10">
+                    <div class="mt-5">
+                        <PythonIcons class="w-10 h-10 mx-auto mb-3" />
+                        <Skill name="Python" />
+                    </div>
+
+                    <div class="mt-5">
+                        <JavaScriptIcons class="w-10 h-10 mx-auto mb-3" />
+                        <Skill name="JavaScript" />
+                    </div>
+                    <div class="mt-5">
+                        <MySQLIcons class="w-10 h-10 mx-auto mb-3" />
+                        <Skill name="Database" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5 class="">Tools</h5>
+                <div class="flex flex-wrap gap-x-5 py-10">
+                    <div class="mt-5">
+                        <GitIcons class="w-10 h-10 mx-auto mb-3" />
+                        <Skill name="Git" />
+                    </div>
+
+                    <div class="mt-5">
+                        <FigmaIcons class="w-10 h-10 mx-auto mb-3" />
+                        <Skill name="Figma" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5 class="">Soft Skills</h5>
+                <ul class="flex flex-wrap gap-x-5 py-10">
+                    <li class="hover:text-teal-500">Liderazgo</li>
+                    <li class="hover:text-teal-500">Trabajo en equipo</li>
+                    <li class="hover:text-teal-500">Resolución de problemas</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

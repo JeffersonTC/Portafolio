@@ -1,0 +1,66 @@
+---
+import CardProyect from "../components/CardProyect.astro";
+import HtmlIcons from "../assets/Icons/Html.astro";
+import CssIcons from "../assets/Icons/Css.astro";
+import AstroI from "../assets/Icons/AstroIcons.astro";
+import TailwindIcons from "../assets/Icons/Tailwinds.astro";
+---
+
+<section
+    id="proyect"
+    class="w-full scroll-margin-top flex flex-col w-full pt-5 text-xl text-gray-400 box-border mx-auto lg:w-[940px] xl:w-[1280px]"
+>
+    <div class="xl:mx-auto lg:w-[940px] xl:w-[1280px] mt-10">
+        <h3
+            class="text-xl sm:text-2xl font-bold leading-15 text-teal-500 uppercase tracking-wider"
+        >
+            Proyectos
+        </h3>
+        <p class="text-sm sm:text-xl pt-5 text-gray-400">
+            Estos son algunos de los proyectos en los que he trabajado.
+        </p>
+    </div>
+    <div
+        class="mx-auto lg:w-[940px] xl:w-[1280px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-20 py-5 text-gray-400 text-lg"
+    >
+        <CardProyect
+            title="Portafolio Web"
+            description="Mi portafolio personal, donde muestro mis habilidades y proyectos."
+            image="../src/assets/IMG/porta.png"
+            link="#"
+            buttom="Código"
+            demo="Demo"
+        >
+            <HtmlIcons slot="icons" class="w-10 h-10" />
+            <CssIcons slot="icons" class="w-10 h-10" />
+            <AstroI slot="icons" class="w-10 h-10" />
+            <TailwindIcons slot="icons" class="w-10 h-10" />
+        </CardProyect>
+        <CardProyect
+            title="Blog Personal"
+            description="Mi blog personal, donde comparto mis experiencias y conocimientos."
+            image="../src/IMG/assets/porta.png"
+            link="#"
+            buttom="Código"
+            demo="Demo"
+        >
+            <HtmlIcons slot="icons" class="w-10 h-10" />
+            <CssIcons slot="icons" class="w-10 h-10" />
+            <AstroI slot="icons" class="w-10 h-10" />
+            <TailwindIcons slot="icons" class="w-10 h-10" />
+        </CardProyect>
+        <CardProyect
+            title="Tienda Online"
+            description="Una tienda online de ropa, donde los usuarios pueden comprar productos."
+            image="/tienda.png"
+            link="#"
+            buttom="Código"
+            demo="Demo"
+        >
+            <HtmlIcons slot="icons" class="w-10 h-10" />
+            <CssIcons slot="icons" class="w-10 h-10" />
+            <AstroI slot="icons" class="w-10 h-10" />
+            <TailwindIcons slot="icons" class="w-10 h-10" />
+        </CardProyect>
+    </div>
+</section>

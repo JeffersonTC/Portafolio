@@ -1,0 +1,25 @@
+---
+import MenuItems from "../assets/Icons/Menu.astro";
+---
+
+<header
+    class="flex justify-between sm:justify-around items-center py-4 px-5 sm:px-5 bg-gray-900/80 backdrop-blur-md border-b border-gray-800 text-white
+     shadow-md fixed w-full z-10 text-L
+    uppercase flex-wrap box-border"
+>
+    <a href="#" class="text-4xl py-5 flex">
+        <p class="text-white font-light">Porta</p>
+        <p class="text-teal-500 font-light">folio</p></a
+    >
+    <nav class="max-[600px]:hidden space-x-5 flex-col text-lg">
+        <a href="#inicio" class="hover:text-gray-300 hover:bg-gray-800 hover:text-teal-500 px-4  py-3 rounded  duration-300 ease-in-out">Home</a>
+        <a href="#proyect" class="hover:text-gray-300 hover:bg-gray-800 hover:text-teal-500 px-4  py-3 rounded duration-300 ease-in-out">Proyect</a>
+        <a href="#about" class="hover:text-gray-300 hover:bg-gray-800 hover:text-teal-500 px-4  py-3 rounded  duration-300 ease-in-out">About</a>
+        <a href="#contact" class="hover:text-gray-300 hover:bg-gray-800 hover:text-teal-500 px-4  py-3 rounded duration-300 ease-in-out">Contact</a>
+    </nav>
+    <nav class="block sm:hidden">
+        <a href="#">
+            <MenuItems />
+        </a>
+    </nav>
+</header>
