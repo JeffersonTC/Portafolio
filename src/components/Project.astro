@@ -4,6 +4,7 @@ import HtmlIcons from "../assets/Icons/Html.astro";
 import CssIcons from "../assets/Icons/Css.astro";
 import AstroI from "../assets/Icons/AstroIcons.astro";
 import TailwindIcons from "../assets/Icons/Tailwinds.astro";
+import JavaScript from "../assets/Icons/JavaScript.astro";
 ---
 
 <section
@@ -27,7 +28,8 @@ import TailwindIcons from "../assets/Icons/Tailwinds.astro";
             title="Portafolio Web"
             description="Mi portafolio personal, donde muestro mis habilidades y proyectos."
             image="../public/porta.png"
-            link="#"
+            codelink="https://github.com/JeffersonTC/Portafolio"
+            demolink="https://jeffersontc.github.io/Portafolio/"
             buttom="Código"
             demo="Demo"
         >
@@ -39,7 +41,7 @@ import TailwindIcons from "../assets/Icons/Tailwinds.astro";
         <CardProyect
             title="Blog Personal"
             description="Mi blog personal, donde comparto mis experiencias y conocimientos."
-            image="../src/IMG/assets/porta.png"
+            image="#"
             link="#"
             buttom="Código"
             demo="Demo"
@@ -52,15 +54,15 @@ import TailwindIcons from "../assets/Icons/Tailwinds.astro";
         <CardProyect
             title="Tienda Online"
             description="Una tienda online de ropa, donde los usuarios pueden comprar productos."
-            image="/tienda.png"
-            link="#"
+            image="../../public/Tienda-online.png"
+            codelink="https://github.com/JeffersonTC/Tienda-Online"
+            demolink="https://jeffersontc.github.io/Tienda-Online/"
             buttom="Código"
             demo="Demo"
         >
             <HtmlIcons slot="icons" class="w-10 h-10" />
             <CssIcons slot="icons" class="w-10 h-10" />
-            <AstroI slot="icons" class="w-10 h-10" />
-            <TailwindIcons slot="icons" class="w-10 h-10" />
+            <JavaScript slot="icons" class="w-10 h-10" />
         </CardProyect>
     </div>
 </section>
